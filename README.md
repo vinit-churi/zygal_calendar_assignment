@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Zygal Frontend Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a solution to the Zygal Frontend Test. It is a simple calendar application built with HTML, CSS, and JavaScript. The application does not use any third-party calendar libraries.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live demo of the application [here](https://vercel.com/vinit-churi/zygal-calendar-assignment/BV9gA8zCuGbsw7XTotwWsG94vijk).
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- The application loads the current month's calendar as soon as the page loads. The current date is selected by default and is highlighted in blue with white text.
+- The application provides 'Prev' and 'Next' toggle buttons to navigate between different months. The calendar increments by 1 month when the "Next" button is pressed and decrements by 1 month when the "Prev" button is pressed.
+- Users can click the dates to select them. Selected dates are pushed into an array and displayed on the webpage. Clicking the same date again will deselect it and remove it from the array.
+- If the 'Next' or 'Prev' buttons are clicked, the selected dates remain as they are. When the user navigates back to the same month, the selected dates are highlighted.
 
-- Configure the top-level `parserOptions` property like this:
+## Technical Rules
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- The application is built using HTML, CSS, and JS. JS-based frameworks like Vue can be used.
+- No third-party calendar library is used for the calendar UI and its functionalities.
+- The UI is responsive and is kept at the center of the screen.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Functionality Explanation
+
+1. The application loads the current month's calendar as soon as the page loads. The current date is selected by default and is highlighted in blue with white text.
+2. The application provides 'Prev' and 'Next' toggle buttons to navigate between different months. The calendar increments by 1 month when the "Next" button is pressed and decrements by 1 month when the "Prev" button is pressed.
+3. Users can click the dates to select them. Selected dates are pushed into an array and displayed on the webpage. Clicking the same date again will deselect it and remove it from the array.
+4. If the 'Next' or 'Prev' buttons are clicked, the selected dates remain as they are. When the user navigates back to the same month, the selected dates are highlighted.
